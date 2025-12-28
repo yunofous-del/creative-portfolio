@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creative Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #ff5f6d;
+      --secondary: #ffc371;
+      --dark: #1e293b;
+      --light: #fff7ed;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--light);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    header {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+
+    header p {
+      max-width: 600px;
+      margin: 1rem auto;
+      font-size: 1.1rem;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 0.75rem 2rem;
+      background: white;
+      color: var(--primary);
+      border-radius: 999px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    section {
+      padding: 5rem 10%;
+    }
+
+    .section-title {
+      font-size: 2.2rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .about img {
+      width: 100%;
+      border-radius: 1rem;
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: white;
+      padding: 2rem;
+      border-radius: 1rem;
+      text-align: center;
+      font-weight: 600;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    .portfolio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .portfolio img {
+      width: 100%;
+      border-radius: 1rem;
+      transition: transform 0.3s ease;
+    }
+
+    .portfolio img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background: var(--dark);
+      color: white;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    @media (max-width: 768px) {
+      .about {
+        grid-template-columns: 1fr;
+      }
+
+      header h1 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div>
+      <h1>Your Name</h1>
+      <p>Creative Graphic Designer & Visual Storyteller. I design colorful, modern, and impactful digital experiences.</p>
+      <a href="#portfolio" class="btn">View My Work</a>
+    </div>
+  </header>
+
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="about">
+      <div>
+        <p>
+          I am a creative graphic designer with a passion for bold colors, clean layouts, and strong visual identity.
+          I help brands and individuals communicate their ideas through design.
+        </p>
+      </div>
+      <img src="img/profile.jpeg" alt="Profile">
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills">
+      <div class="card">Graphic Design</div>
+      <div class="card">Brand Identity</div>
+      <div class="card">UI / UX Design</div>
+      <div class="card">HTML & CSS</div>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <h2 class="section-title">Portfolio</h2>
+    <div class="portfolio">
+      <img src="img/work-1.jpeg" alt="Work 1">
+      <img src="img/work-2.jpeg" alt="Work 2">
+      <img src="img/work-3.jpeg" alt="Work 3">
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Your Name • Built with GitHub & Netlify</p>
+  </footer>
+
+</body>
+</html>
